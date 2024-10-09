@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to My App"
+        android:layout_marginTop="140dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/gambarticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ilustration_svg"
+        android:layout_below="@id/tvTicket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambarticket"
+        android:hint="Enter Your Name"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="58dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/etName"
+        android:layout_toEndOf="@id/btnSubmit"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:textAllCaps="false"
+        android:layout_marginEnd="58dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        />
+
+</RelativeLayout>
